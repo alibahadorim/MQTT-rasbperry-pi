@@ -1,0 +1,11 @@
+mosquitto must be installed on both publisher and subscriber . 
+then by using the ip adress of the broker it is possible to send data or message from publisher to broker.
+to test if mosquitto is installed corectly and can communicate 
+mosquitto_sub -h localhost -t test/topic
+mosquitto_pub -h localhost -t test/topic -m "Hello, world!"
+
+changing the config and adding 
+allow_anonymous true
+anonymous_username anonymous
+
+
